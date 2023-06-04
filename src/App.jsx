@@ -5,6 +5,13 @@ import Projects from './components/Project'
 
 function App() {
   const[shown,SetShown] = useState(0)
+  
+  function scroll(x){
+    if(x==1) window.scrollBy({top:150,left:0,behavior:'smooth'})
+    if(x==2) window.scrollBy({top:440,left:0,behavior:'smooth'})
+    if(x==3) window.scrollBy({top:1050,left:0,behavior:'smooth'})
+    if(x==4) window.scrollBy({top:2400,left:0,behavior:'smooth'})
+  }
 
   return (
     <>
@@ -14,10 +21,10 @@ function App() {
             <p className="mendez">MENDEZ</p>
           </div>
           <div className="top-bar-right">
-            <p className='toptxt'>HOME</p>
-            <p className='toptxt'>ABOUT ME</p>
-            <p className='toptxt'>PROJECTS</p>
-            <p className='toptxt'>CONTACT ME</p>
+            <p className='toptxt' onClick={() => scroll(1)}>HOME</p>
+            <p className='toptxt' onClick={() => scroll(2)}>ABOUT ME</p>
+            <p className='toptxt' onClick={() => scroll(3)}>PROJECTS</p>
+            <p className='toptxt' onClick={() => scroll(4)}>CONTACT ME</p>
           </div>
           <div className="boutme-wrap">
             <div className='boutme-ln'>
