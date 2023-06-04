@@ -3,11 +3,13 @@ import './Project.css'
 function Project({img,title,desc,git,demo}) {
     return(
         <div className='project-card'>
-            <img className='project-img' src={img}></img>
+            <a href={demo} className='imgref'>
+                <img className='project-img' src={img}></img>
+            </a>
             <h4 className='project-title'>{title}</h4>
             <p className='project-desc'>{desc}</p>
-            <a className='github' href={git}>Github</a>
-            <a className='demo' href={demo}>Demo</a>
+            <a className='github' href={git}><u>Github</u></a>
+            <a className='demo' href={demo}><u>Demo</u></a>
         </div>
     )
 }
@@ -37,16 +39,27 @@ function Projects() {
             demo="https://mendezg1s-memory.netlify.app/"
             />
             <Project
-            img="./duck.png"
+            img="./duck.PNG"
             title="DuckDuckGo Clone"
             desc="A DuckDuckGo clone with eslint's airbnb rules applied."
             git="https://github.com/Mendezg1/Linting"
             demo="https://mendezg1-duckduckgo-clone.netlify.app"
             />
             <Project
+            img="./calc.png"
+            title="Calculator"
+            desc="A webpage imitating the basic functions of a Casio calculator."
+            git="https://github.com/Mendezg1/Calculadora"
+            demo="https://mendezg1scalcutator.netlify.app"
             />
             <Project
+            img="./port.png"
+            title="Portfolio"
+            desc="This page is also one of my projects in which I can show you my web abilities."
+            git="https://github.com/Mendezg1/Portfolio"
+            demo="https://mendezg1sportfolio.netlify.app"
             />
+            
         </div>
     )
 }

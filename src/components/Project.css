@@ -1,0 +1,81 @@
+
+
+.project-card{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 150px;
+    left: -20px;
+    width: 450px;
+    height: 500px;
+    background-color: #002129;
+    border-radius: 20px;
+    margin-left: 30px;
+}
+
+.imgref{
+    position: relative;
+    top: 30px;
+    left: 55px;
+    width: 350px;
+    height: 250px;
+}
+
+.project-img{
+    position: relative;
+    width: 350px;
+    height: 250px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    background-color: #f7f7ff;
+}
+
+.project-title{
+    position: relative;
+    color: #f7f7ff;
+    font-family: 'Aoboshi One', serif;
+    font-size: 20px;
+    top: 20px;
+}
+
+.project-desc{
+    position: relative;
+    top: -20px;
+    text-align: justify;
+    font-size: 20px;
+    margin: 30px;
+    color: #f7f7ff;
+}
+
+.github,.demo{
+    position: relative;
+    color: #fffbdb;
+    font-family: 'Aoboshi One', serif;
+    font-size: 17px;
+    top: -1%;
+    width: 60px;
+}
+
+.github{
+    left: 40px;
+}
+
+.demo{
+    top: -6%;
+    left: 340px;
+}
+
+.projects{
+    position: relative;
+    top: 1000px;
+    width: 1500px;
+    height: 1400px;
+    left: -31px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #005164;;
+}
+
+.github:hover,.demo:hover{
+    color: #F8C31B;
+}

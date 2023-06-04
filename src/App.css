@@ -238,3 +238,53 @@
 .db-img{
   margin-top: -15px;
 }
+
+.projects-title{
+  position: absolute;
+  font-family: 'Aoboshi One', serif;
+  font-size: 45px;
+  color: #fffBDB;
+  top: 1030px;
+  left: 550px;
+  z-index: 999;
+}
+
+.contact{
+  position: relative;
+  top: -30px;
+  left: 480px;
+  font-family: 'Aoboshi One', serif;
+  font-size: 40px;
+  color: #f7f7ff;
+}
+
+.contact-me{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 450px;
+  width: 1482px;
+  left: -33px;
+  background-color: #004252;
+  top: 1050px;
+}
+
+.contac-back{
+  cursor: pointer;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  top: 130px;
+  left: -200px;
+  background-color: #ffff;
+  border-radius: 20px;
+}
+
+.cont-img{
+  position: relative;
+  top: 25px;
+  width: 150px;
+  height: 150px;
+}
+
